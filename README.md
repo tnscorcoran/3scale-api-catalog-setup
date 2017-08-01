@@ -62,8 +62,8 @@ First apis.json. Before you import it, remove the Voice API entry. Copy the file
 ![05-highlight-voice-api-json](https://raw.githubusercontent.com/tnscorcoran/3scale-api-catalog-setup/master/_images/05-highlight-voice-api-json.png)    
 Now delete the remaining comma and curly braces:  
 ![06-delete-comma-curly-braces](https://raw.githubusercontent.com/tnscorcoran/3scale-api-catalog-setup/master/_images/06-delete-comma-curly-braces.png)      
-Copy the contents of the file into the text box and configure the 3scale page as follows:  
+Copy the contents of the file into the text box and configure the 3scale page as follows (noting the highlighed fields we've changed):  
 ![07-apis-json-import](https://raw.githubusercontent.com/tnscorcoran/3scale-api-catalog-setup/master/_images/07-apis-json-import.png)  
 
-Next apidetails.html. Configure it as follows, copying the contents of the file into the text box.
+Next apidetails.html. Configure it as follows (noting the highlighed fields we've changed), copying the contents of the file into the text box:
   
