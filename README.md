@@ -12,15 +12,15 @@ We will be constantly evolving this tutorial but for now we will import 4 OAI (S
 ##### 2 - Import 4 OAI specs into 3scale.
 ##### 3 - Add catalog files to your 3scale Developer Portal.
 ##### 4 - Modify our catalog files to reflect our API specs.
-##### 5 - Test our catalog.  
+##### 5 - Test your catalog.  
 
 ## Prerequisites
 Access to a 3scale Account - either SaaS or On Prem  
 
 ## 1 - Get your 3scale domain and access token.
 First, get your 3scale domain.  
-With SaaS it's the portion of your Admin URL between *http://* and *-admin.3scale.net*. e.g. with *https://plugin-admin.3scale.net* it's *plugin*  
-With On Prem, it's the portion of your Admin URL between *http://* and the dot preceding the start of your host or IP. e.g. with *https://3scale-admin.amp.52.15.150.46.nip.io* it's *3scale-admin.amp*. We'll refer to this as your *3scale-domain*.  
+With SaaS it's the portion of your Admin URL between *https://* and *-admin.3scale.net*. e.g. with *https://plugin-admin.3scale.net* it's *plugin*  
+With On Prem, it's the portion of your Admin URL between *https://* and the dot preceding the start of your host or IP. e.g. with *https://3scale-admin.amp.52.15.150.46.nip.io* it's *3scale-admin.amp*. We'll refer to this as your *3scale-domain*.  
 Next, get your 3scale Access token (used to initialize the CLI). Go to Gear sign - Personal Settings - Tokens  
 ![01-threescale-accesstoken-1](https://raw.githubusercontent.com/tnscorcoran/3scale-api-catalog-setup/master/_images/01-threescale-accesstoken-1.png)
 Add Access token  
@@ -61,7 +61,7 @@ This is a good OAI spec validator: http://bigstickcarpet.com/swagger-parser/www/
   
 ## 3 - Add catalog files to your 3scale Developer Portal.
 First we are going to add some images to our 3scale Developer Portal. Go to Developer Portal - New File - New File as shown. First upload openshift.png in _catalog-images in this repo. Set the details as follows choosing this png file.   
-![04-new-file-image](https://raw.githubusercontent.com/tnscorcoran/3scale-api-catalog-setup/master/_catalog-images/04-new-file-image.png)  
+![04-new-file-image](https://raw.githubusercontent.com/tnscorcoran/3scale-api-catalog-setup/master/images/04-new-file-image.png)  
   
 Create File  
   
