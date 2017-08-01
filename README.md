@@ -73,14 +73,14 @@ Copy the contents of the file into the text box and configure the 3scale page as
 ![07-apis-json-import](https://raw.githubusercontent.com/tnscorcoran/3scale-api-catalog-setup/master/_images/07-apis-json-import.png)  
   
     
-Next apilist.html, the catalog/search page. Create a *New Page* as shown above and then configure it as follows (noting the highlighted fields we've changed), copying the contents of the file into the text box:
+Next apilist.html, the catalog/search page. Create a *New Page* as shown above and then configure it as follows (noting the highlighted fields we've changed), copying the contents of the 3scale-discover-APIs repo apilist.html file into the text box:
   
 ![08-apilist.html](https://raw.githubusercontent.com/tnscorcoran/3scale-api-catalog-setup/master/_images/08-apilist.png)  
   
 Click Create Page. After it is created, click Publish.  
   
   
-Next apidetails.html. Create a *New Page* as shown above and then configure it as follows (noting the highlighted fields we've changed), copying the contents of the file into the text box:
+Next apidetails.html. Create a *New Page* as shown above and then configure it as follows (noting the highlighted fields we've changed), copying the contents of the 3scale-discover-APIs repo apidetails.html file into the text box:
     
 ![09-apilist.html](https://raw.githubusercontent.com/tnscorcoran/3scale-api-catalog-setup/master/_images/09-apidetails.png)  
   
