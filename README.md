@@ -39,7 +39,7 @@ npm install -g node-3scale-cli
 ? 3scale id:  (enter your *3scale-domain*)   
 ? 3scale wildcard domain : (3scale.net or the rest of your 3scalehost)  
   
-In your terminal, cd to where you cloned this repo. Run the following commands to import the OAI specs as Active Docs (Interactive Documentation) into 3scale. Each one will take couple of minutes :
+In your terminal, cd to where you cloned this repo. Run the following commands to import the OAI specs as Active Docs (Interactive Documentation) into 3scale. Each one will take couple of minutes:  
 3scale-cli activedocs create -f ./oai-spec-1-core-v1.json  
 3scale-cli activedocs create -f ./oai-spec-2-openshiftIo_v1.json  
 3scale-cli activedocs create -f ./oai-spec-3-autoscaling_v1.json  
