@@ -83,8 +83,8 @@ First apis.json. Before you import it, remove the Voice API entry. Copy the file
 Now delete the remaining comma and curly braces:  
 ![06-delete-comma-curly-braces](https://raw.githubusercontent.com/tnscorcoran/3scale-api-catalog-setup/master/_images/06-delete-comma-curly-braces.png)    
   
-# To Do - modify apis.json adding the 4 APIs before uploading    
-See comparison image below. The blue highlighted areas will need to be changed. The section between lines 15 and 47 will need to be repeated per API. 
+    
+See comparison image below. The blue highlighted areas will need to be changed. The section between lines 15 and 47 will need to be repeated per API or catalog entry. 
 ![06-apis.json-for-openshift-compared](https://raw.githubusercontent.com/tnscorcoran/3scale-api-catalog-setup/master/_images/06-apis.json-for-openshift-compared.png)  
  
     
