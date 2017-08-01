@@ -49,7 +49,7 @@ core-v1
 appsOpenshiftIo_v1  
 autoscaling_v1  
 oapi  
-
+This is a good OAI spec validator: http://bigstickcarpet.com/swagger-parser/www/index.html
 
 
 
