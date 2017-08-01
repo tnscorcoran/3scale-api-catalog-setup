@@ -44,17 +44,32 @@ In your terminal, cd to where you cloned this repo. Run the following commands t
 3scale-cli activedocs create -f ./oai-spec-2-openshiftIo_v1.json  
 3scale-cli activedocs create -f ./oai-spec-3-autoscaling_v1.json  
 3scale-cli activedocs create -f ./oai-spec-4-oauth-api.json  
-# These fail on IMPORT - I have just manually entered them with these names (identical system names)
+# These fail on IMPORT - I have just manually entered them with these names (identical system names). 
 core-v1  
 appsOpenshiftIo_v1  
 autoscaling_v1  
 oapi  
-This is a good OAI spec validator: http://bigstickcarpet.com/swagger-parser/www/index.html
+
+# I also manually created these 4 services:   
+Openshift Core API (system name openshift-core-api)  
+Openshift IO V1 API (system name openshift-io-v1-api)  
+Openshift Autoscaling API (system name openshift-autoscaling-api)  
+Openshift Oauth API (system name openshift-oauth-api)
+  
+This is a good OAI spec validator: http://bigstickcarpet.com/swagger-parser/www/index.html  
   
   
 ## 3 - Add catalog files to your 3scale Developer Portal.
 First we are going to add some images to our 3scale Developer Portal. Go to Developer Portal - New File - New File as shown. First upload openshift.png in _catalog-images in this repo. Set the details as follows choosing this png file.   
 ![04-new-file-image](https://raw.githubusercontent.com/tnscorcoran/3scale-api-catalog-setup/master/_catalog-images/04-new-file-image.png)  
+  
+Create File  
+  
+Do the same with: 
+*_catalog-images/openshift-by-redhat.png*    
+*_catalog-images/version-1.png*    
+*_catalog-images/openshift-autoscaling.png*    
+*_catalog-images/oauth.png*    
   
 Next, go to [API discovery 3scale Repo](https://github.com/3scale/3scale-discover-APIs)  
 Clone the Repo or just copy the 3 files to your hard drive: apidetails.html, apilist.html and apis.json  
@@ -69,7 +84,9 @@ Now delete the remaining comma and curly braces:
 ![06-delete-comma-curly-braces](https://raw.githubusercontent.com/tnscorcoran/3scale-api-catalog-setup/master/_images/06-delete-comma-curly-braces.png)    
   
 # To Do - modify apis.json adding the 4 APIs before uploading    
-  
+See comparison image below. The blue highlighted areas will need to be changed. The section between lines 15 and 47 will need to be repeated per API. 
+![06-apis.json-for-openshift-compared](https://raw.githubusercontent.com/tnscorcoran/3scale-api-catalog-setup/master/_images/06-apis.json-for-openshift-compared.png)  
+ 
     
 Copy the contents of the file into the text box and configure the 3scale page as follows (noting the highlighed fields we've changed):  
   
