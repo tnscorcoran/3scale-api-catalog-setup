@@ -124,6 +124,7 @@ with the line:
           a class="{% if urls.docs.active? %}active{% endif %}" href="/apilist">API Discovery  
         
 This will cause an API Discovery menu item to appear on the top of the screen.
+![10-api-discovery-menu](https://raw.githubusercontent.com/tnscorcoran/3scale-api-catalog-setup/master/_images/10-api-discovery-menu.png)  
 
 
   		  
