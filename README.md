@@ -93,6 +93,9 @@ Copy the contents of the file into the text box and configure the 3scale page as
 ![07-apis-json-import](https://raw.githubusercontent.com/tnscorcoran/3scale-api-catalog-setup/master/_images/07-apis-json-import.png)  
   
     
+Click Create Page. After it is created, click Publish.  
+    
+  
 Next apilist.html, the catalog/search page. Create a *New Page* as shown above and then configure it as follows (noting the highlighted fields we've changed), copying the contents of the 3scale-discover-APIs repo apilist.html file into the text box:
   
 ![08-apilist.html](https://raw.githubusercontent.com/tnscorcoran/3scale-api-catalog-setup/master/_images/08-apilistt.png)  
@@ -102,5 +105,25 @@ Click Create Page. After it is created, click Publish.
   
 Next apidetails.html. Create a *New Page* as shown above and then configure it as follows (noting the highlighted fields we've changed), copying the contents of the 3scale-discover-APIs repo apidetails.html file into the text box:
     
-![09-apilist.html](https://raw.githubusercontent.com/tnscorcoran/3scale-api-catalog-setup/master/_images/09-apidetails.png)  
+![09-details.html](https://raw.githubusercontent.com/tnscorcoran/3scale-api-catalog-setup/master/_images/09-apidetails.png)  
   
+    
+Click Create Page. After it is created, click Publish.  
+
+
+To view your catalog go to [https://plugin.3scale.net/apilist](https://plugin.3scale.net/apilist). You should be able ti search on the keywords and drill in and see the OAI interactive documentation displayed.
+
+
+Alternatively go to the *submenu* page here (or your equivalent)
+
+Replace the lines:    
+		  <li><a class="{% if urls.docs.active? %}active{% endif %}" href="/docs">Documentation</a></li>
+		  and 
+		   <li><a href="/docs">Documentation</a></li>
+with the line:  
+        <li><a class="{% if urls.docs.active? %}active{% endif %}" href="/apilist">API Discovery</a></li>  
+        
+This will cause an API Discovery menu item to appear on the top of the screen.
+
+
+  		  
