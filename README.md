@@ -75,7 +75,7 @@ Copy the contents of the file into the text box and configure the 3scale page as
     
 Next apilist.html, the catalog/search page. Create a *New Page* as shown above and then configure it as follows (noting the highlighted fields we've changed), copying the contents of the 3scale-discover-APIs repo apilist.html file into the text box:
   
-![08-apilist.html](https://raw.githubusercontent.com/tnscorcoran/3scale-api-catalog-setup/master/_images/08-apilist.png)  
+![08-apilist.html](https://raw.githubusercontent.com/tnscorcoran/3scale-api-catalog-setup/master/_images/08-apilistt.png)  
   
 Click Create Page. After it is created, click Publish.  
   
