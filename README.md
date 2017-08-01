@@ -61,7 +61,7 @@ This is a good OAI spec validator: http://bigstickcarpet.com/swagger-parser/www/
   
 ## 3 - Add catalog files to your 3scale Developer Portal.
 First we are going to add some images to our 3scale Developer Portal. Go to Developer Portal - New File - New File as shown. First upload openshift.png in _catalog-images in this repo. Set the details as follows choosing this png file.   
-![04-new-file-image](https://raw.githubusercontent.com/tnscorcoran/3scale-api-catalog-setup/master/images/04-new-file-image.png)  
+![04-new-file-image](https://raw.githubusercontent.com/tnscorcoran/3scale-api-catalog-setup/master/_images/04-new-file-image.png)  
   
 Create File  
   
