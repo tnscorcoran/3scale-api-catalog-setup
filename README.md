@@ -21,7 +21,7 @@ Access to a 3scale Account - either SaaS or On Prem
 First, get your 3scale domain.  
 With SaaS it's the portion of your Admin URL between *http://* and *-admin.3scale.net*. e.g. with *https://plugin-admin.3scale.net* it's *plugin*
 With On Prem, it's the portion of your Admin URL between *http://* and the dot preceding the start of your host or IP. e.g. with *https://3scale-admin.amp.52.15.150.46.nip.io* it's *3scale-admin.amp*. We'll refer to this as your *3scale-domain*.  
-Next, get your 3scale Access token (used to create gateway). Go to Gear sign - Personal Settings - Tokens  
+Next, get your 3scale Access token (used to initialize the CLI). Go to Gear sign - Personal Settings - Tokens  
 ![01-threescale-accesstoken-1](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/05-threescale-accesstoken-1.png)
   
 Add Access token  
