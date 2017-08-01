@@ -56,7 +56,7 @@ This is a good OAI spec validator: http://bigstickcarpet.com/swagger-parser/www/
 Go to [API discovery 3scale Repo](https://github.com/3scale/3scale-discover-APIs)  
 Clone the Repo or just copy the 3 files to your hard drive: apidetails.html, apilist.html and apis.json  
 Import each of them into your 3scale Developer Portal, i.e. with each, in 3scale go to Developer Portal - New File - New Page as shown:  
-![04-new-file](https://raw.githubusercontent.com/tnscorcoran/3scale-api-catalog-setup/master/_images/04-dev-portal-new-file.png)  
+![04-new-file](https://raw.githubusercontent.com/tnscorcoran/3scale-api-catalog-setup/master/_images/04-dev-portal-new-page.png)  
 Configure them as follows:  
 First apis.json. Before you import it, remove the Voice API entry. Copy the files to an online editor like http://www.jsoneditoronline.org. Double click just above *"name": "Voice API"* and to the right of the curly brace. The entire section will highlight. Delete it. 
 ![05-highlight-voice-api-json](https://raw.githubusercontent.com/tnscorcoran/3scale-api-catalog-setup/master/_images/05-highlight-voice-api-json.png)    
@@ -64,6 +64,7 @@ Now delete the remaining comma and curly braces:
 ![06-delete-comma-curly-braces](https://raw.githubusercontent.com/tnscorcoran/3scale-api-catalog-setup/master/_images/06-delete-comma-curly-braces.png)      
 Copy the contents of the file into the text box and configure the 3scale page as follows (noting the highlighed fields we've changed):  
 ![07-apis-json-import](https://raw.githubusercontent.com/tnscorcoran/3scale-api-catalog-setup/master/_images/07-apis-json-import.png)  
+Click Create Page.  
 
 Next apidetails.html. Configure it as follows (noting the highlighed fields we've changed), copying the contents of the file into the text box:
   
