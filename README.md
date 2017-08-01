@@ -31,6 +31,25 @@ We'll refer to this your *3scale-access-token*
   
   
 ## 2 - Import 4 OAI specs into 3scale.
-Go to the [3scale CLI](https://github.com/3scale/3scale-cli)  
+*git clone* this repo
+Go to the [3scale CLI](https://github.com/3scale/3scale-cli) for full instructions. Run the following:  
+npm install -g node-3scale-cli  
+3scale-cli config  
+? 3scale access token: (enter your *3scale-access-token*)   
+? 3scale id:  (enter your *3scale-domain*)   
+? 3scale wildcard domain : (3scale.net or the rest of your 3scalehost)  
   
+In your terminal, cd to where you cloned this repo. Run the following commands to import the OAI specs as Active Docs (Interactive Documentation) into 3scale. Each one will take couple of minutes :
+3scale-cli activedocs create -f ./oai-spec-1-core-v1.json  
+3scale-cli activedocs create -f ./oai-spec-2-openshiftIo_v1.json  
+3scale-cli activedocs create -f ./oai-spec-3-autoscaling_v1.json  
+3scale-cli activedocs create -f ./oai-spec-4-oauth-api.json  
+# These fail on IMPORT - I have just manually entered them with these names (identical system names)
+core-v1  
+appsOpenshiftIo_v1  
+autoscaling_v1  
+oapi  
+
+
+
 

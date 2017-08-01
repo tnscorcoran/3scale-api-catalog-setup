@@ -1,0 +1,92 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "OpenShift provides builds, application lifecycle, image content management,\nand administrative policy on top of Kubernetes. The API allows consistent\nmanagement of those objects.\n\nAll API operations are authenticated via an Authorization\tbearer token that\nis provided for service accounts as a generated secret (in JWT form) or via\nthe native OAuth endpoint located at /oauth/authorize. Core infrastructure\ncomponents may use client certificates that require no authentication.\n\n",
+    "title": "OpenShift API (with Kubernetes)",
+    "license": {
+      "name": "Apache 2.0 (ASL2.0)",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0"
+    },
+    "version": "latest"
+  },
+  "paths": {
+    "/apis/autoscaling/v1/": {
+      "get": {
+        "description": "get available resources",
+        "consumes": [
+          "application/json",
+          "application/yaml",
+          "application/vnd.kubernetes.protobuf"
+        ],
+        "produces": [
+          "application/json",
+          "application/yaml",
+          "application/vnd.kubernetes.protobuf"
+        ],
+        "schemes": [
+          "https"
+        ],
+        "tags": [
+          "autoscaling_v1"
+        ],
+        "operationId": "getAutoscalingV1APIResources",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/io.k8s.apimachinery.pkg.apis.meta.v1.APIResourceList"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {},
+  "securityDefinitions": {
+    "BearerToken": {
+      "description": "Bearer Token authentication",
+      "type": "apiKey",
+      "name": "authorization",
+      "in": "header"
+    },
+    "Oauth2AccessToken": {
+      "type": "oauth2",
+      "flow": "accessCode",
+      "authorizationUrl": "https://127.0.0.1:8443/oauth/authorize",
+      "tokenUrl": "https://127.0.0.1:8443/oauth/token",
+      "scopes": {
+        "user:check-access": "Read-only access to view your privileges (for example, \"can I create builds?\")",
+        "user:full": "Full read/write access with all of your permissions",
+        "user:info": "Read-only access to your user information (including username, identities, and group membership)",
+        "user:list-projects": "Read-only access to list your projects and view their metadata (display name, description, etc.)",
+        "user:list-scoped-projects": "Read-only access to list your projects viewable with this token and view their metadata (display name, description, etc.)"
+      }
+    },
+    "Oauth2Implicit": {
+      "type": "oauth2",
+      "flow": "implicit",
+      "authorizationUrl": "https://127.0.0.1:8443/oauth/authorize",
+      "scopes": {
+        "user:check-access": "Read-only access to view your privileges (for example, \"can I create builds?\")",
+        "user:full": "Full read/write access with all of your permissions",
+        "user:info": "Read-only access to your user information (including username, identities, and group membership)",
+        "user:list-projects": "Read-only access to list your projects and view their metadata (display name, description, etc.)",
+        "user:list-scoped-projects": "Read-only access to list your projects viewable with this token and view their metadata (display name, description, etc.)"
+      }
+    }
+  },
+  "security": [
+    {
+      "BearerToken": []
+    },
+    {
+      "Oauth2AccessToken": []
+    },
+    {
+      "Oauth2Implicit": []
+    }
+  ]
+}
