@@ -111,17 +111,17 @@ Next apidetails.html. Create a *New Page* as shown above and then configure it a
 Click Create Page. After it is created, click Publish.  
 
 
-To view your catalog go to [https://plugin.3scale.net/apilist](https://plugin.3scale.net/apilist). You should be able ti search on the keywords and drill in and see the OAI interactive documentation displayed.
+To view your catalog go to [https://plugin.3scale.net/apilist](https://plugin.3scale.net/apilist). You should be able to search on the keywords and drill in and see the OAI interactive documentation displayed.
 
 
-Alternatively go to the *submenu* page here (or your equivalent)
+Alternatively alter the menu structure. Open the *submenu* page at the bottom of the list of files on the left when you open your *Developer Portal* menu in the Admin portal.
 
-Replace the lines:    
-		  <li><a class="{% if urls.docs.active? %}active{% endif %}" href="/docs">Documentation</a></li>
+Replace the anchor entries:    
+		  a class="{% if urls.docs.active? %}active{% endif %}" href="/docs">Documentation
 		  and 
-		   <li><a href="/docs">Documentation</a></li>
+		  a href="/docs">Documentation
 with the line:  
-        <li><a class="{% if urls.docs.active? %}active{% endif %}" href="/apilist">API Discovery</a></li>  
+          a class="{% if urls.docs.active? %}active{% endif %}" href="/apilist">API Discovery  
         
 This will cause an API Discovery menu item to appear on the top of the screen.
 
